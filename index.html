@@ -1,1 +1,480 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Churnd</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            /* -- custom css for Bootstrap 3.x --*/
+
+/* move special fonts to HTML head for better performance */
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:Arial,sans-serif;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+
+/* use special fonts in certain elements */
+h1,h2,h3,h4,.lead,.btn,.navbar a {
+  text-transform:uppercase;
+  font-family:'Voltaire',Arial,sans-serif;
+  letter-spacing:2px;
+}
+
+h1 {
+  font-size:50px;
+}
+
+/* make images gray */
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+   background-color:#fff;
+}
+
+.scroll-down a, .scroll-top a {
+   color:#ffffff;
+}
+
+.scroll-down {
+   position:fixed;
+   bottom:20%;
+   right:0%;
+   color:#f9f9f9;
+}
+
+.scroll-top {
+  background-color:#dbdbdb;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+  text-align:center;
+}
+
+.header .btn-lg {
+   font-size:28px;
+   border-color:#eeeeee;
+   padding:15px;
+   background-color:transparent;
+   color:#ffffff;
+}
+
+.header .btn-lg:hover {
+   background-color:#eeeeee;
+   color:#777777;
+}
+
+.navbar a {
+  color:#fff;
+  font-size:14px;
+}
+
+.navbar-bold.affix {
+  background-color:#d46054;
+}
+
+.navbar-bold {
+  background-color:#f68076;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar-bold li a:hover, .navbar-bold li.active {
+  background-color:#d46054;
+}
+
+    
+.header h1 {
+  font-size:80px;
+  -webkit-text-stroke: 1px rgba(f,f,f,0.1);
+  color:#431a6d;
+  color:#fff;
+  margin-left:-5px;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
+
+.header .lead {
+  color:#d46054;
+  font-size:25px;
+}
+
+.header {
+  height: 80%;
+  background: #f68076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+}
+
+/* use alt in navbar and header for different color */
+
+.alt {
+  background-color: #6E28C9;
+}
+
+.alt .lead {
+  color: #3B0496;
+}
+
+.alt.affix {
+  background-color:#4C06AB;
+}
+
+.alt li a:hover, .alt li.active {
+  background-color:#5D17BA;
+}
+
+
+
+.blurb {
+  padding: 120px 0;
+  background-color:#fefefe;
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.bright {
+  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
+  color:#777;
+}
+
+.featurette {
+  background: #222334;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+.callout {
+  color: #ffffff;
+  padding-top:7%;
+  height: 100%;
+  width: 100%;
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
+
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        
+<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Home</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#sec1">Churn</a></li>
+        <li><a href="#sec2">Features</a></li>
+        <li><a href="#sec3">Grow</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target=".login">Login</a></li>
+       </ul>
+    </div>
+   </div>
+</div>
+
+<div class="header alt vert">
+  <div class="container">
+    
+    <h1>Churnd</h1>
+      <p class="lead">Saving the software industry</p>
+      <div>&nbsp;</div>
+      <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target=".signup">Get Started</a>
+  </div>
+</div>
+
+<hr>
+
+<div id="sec1" class="blurb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>The Problem of Churn</h1>
+        <p class="">One of the biggest problems that software companies face in competing in this market is their lack of visibility on current customers. A customer may come on board with a high monthly pricing structure, but end up costing your company thousands of dollars in marketing, implementation and account management if they fall off the platform after their first few months. The problem is that it’s incredibly difficult to determine which customers are going to fall off and when they are going to do so. </p>
+      </div>
+      <div class="col-md-5">
+        <h1 class="pull-right"><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="featurette" id="sec2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Amazing Features</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-rocket"></i>
+          <h4>User Tracking</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-magnet"></i>
+          <h4>Retention Automation</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-shield"></i>
+          <h4>Behavioral Analysis</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="featurette-item">
+          <i class="icon-pencil"></i>
+          <h4>Predictive Analytics</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<hr>
+
+
+
+<div id="sec3" class="blurb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h1><i class="icon-plane icon-3x"></i></h1>
+      </div>
+      <div class="col-md-7">
+        <h1 class="pull-right">Empower your company</h1>
+        <p class="lead pull-right">Keep your customers</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="blurb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h3>Join the Adventure</h3>
+        <p class="lead"></p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="modal fade signup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Sign up!</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="namePlace">Company Name</label>
+            <input  class="form-control" id="namePlace" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label for="emailPlace">Email address</label>
+            <input type="email" class="form-control" id="emailPlace" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="passPlace">Password</label>
+            <input type="password" class="form-control" id="passPlace" placeholder="Password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div>
+</div>
+
+
+<div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Login!</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="emailPlace">Email address</label>
+            <input type="email" class="form-control" id="emailPlace" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="passPlace">Password</label>
+            <input type="password" class="form-control" id="passPlace" placeholder="Password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Login!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div>
+</div>
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        <hr>
+        <p>Churnd ©2014</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<ul class="nav pull-right scroll-down">
+  <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
+</ul>
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
+</ul>
+
+        
+        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            /* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},800);
+})
+/* smooth scrolling for scroll down */
+$('.scroll-down').click(function(){
+  $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
+})
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#navbar' })
+
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>
