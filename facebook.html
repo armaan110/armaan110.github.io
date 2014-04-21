@@ -567,7 +567,7 @@ small.text-muted {
         $(document).ready(function() {
 
 
-             var tracker = new Churnd('53546b64170bb45724000001');
+             var tracker = new Churnd('5354719b11530812b5000007');
 
              var rand = Math.floor(Math.random() * 10) + 1;
 
@@ -579,20 +579,20 @@ small.text-muted {
             var tB = document.getElementById('loginButton');
             tB.addEventListener('click', function(event) {
               console.log("login");
-            tracker.login(email,"testgroup"); 
+            tracker.login(email,"FBUserGroup"); 
             });
 
 
             var tB = document.getElementById('postButton');
             tB.addEventListener('click', function(event) {
               console.log("post");
-            tracker.track(email,tB.id, "testgroup")
+            tracker.track(email,tB.id, "FBUserGroup")
             });
 
             var lG = document.getElementById('logoutButton');
             lG.addEventListener('click', function(event) {
               console.log("logout");
-            tracker.logout(email,"testgroup")
+            tracker.logout(email,"FBUserGroup")
             });
         
             /* off-canvas sidebar toggle */

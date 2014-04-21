@@ -267,7 +267,7 @@ footer .nav>li>a:hover {
 
 
 
-           var tracker = new Churnd('53546b64170bb45724000001');
+           var tracker = new Churnd('5354719b11530812b5000007');
 
              var rand = Math.floor(Math.random() * 10) + 1;
 
@@ -277,18 +277,18 @@ footer .nav>li>a:hover {
 
             var tB = document.getElementById('loginButton');
             tB.addEventListener('click', function(event) {
-            tracker.login(email,"testgroup"); 
+            tracker.login(email,"TWUserGroup"); 
             });
 
 
             var tB = document.getElementById('homeButton');
             tB.addEventListener('click', function(event) {
-            tracker.track(email,tB.id, "testgroup")
+            tracker.track(email,tB.id, "TWUserGroup")
             });
 
             var lG = document.getElementById('logoutButton');
             lG.addEventListener('click', function(event) {
-            tracker.logout(email,"testgroup")
+            tracker.logout(email,"TWUserGroup")
             });
 
 
