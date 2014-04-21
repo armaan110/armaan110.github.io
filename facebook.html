@@ -387,11 +387,11 @@ small.text-muted {
                     <ul class="nav navbar-nav navbar-right">
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
-                          Mirza Ali</a>
+                          </a>
                         <ul class="dropdown-menu">
                           <li><a href="">Create Page</a></li>
                           <li><a href="">Settings</a></li>
-                          <li><a href="">Logout</a></li>
+                          <li><a  id="logoutButton">Logout</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -413,9 +413,9 @@ small.text-muted {
                                    <form class="form-horizontal" role="form">
                                     <h4>What's New</h4>
                                      <div class="form-group" style="padding:14px;">
-                                      <textarea class="form-control" placeholder="Update your status"></textarea>
+                                      <textarea id="poststatus" class="form-control" placeholder="Update your status"></textarea>
                                     </div>
-                                    <button class="btn btn-primary pull-right" type="button">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                    <button id="postButton" class="btn btn-primary pull-right" type="button">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
                                   </form>
                               </div>
                            
@@ -446,10 +446,10 @@ small.text-muted {
                                
                                 <div class="well"> 
                                    <form class="form">
-                                    <h4>Sign-up</h4>
+                                    <h4>Login!</h4>
                                     <div class="input-group text-center">
-                                    <input type="text" class="form-control input-lg" placeholder="Enter your email address">
-                                      <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
+                                    <input id="loginemail" type="text" class="form-control input-lg" placeholder="Enter your email address">
+                                      <span class="input-group-btn"><button id="loginButton" class="btn btn-lg btn-primary" type="button">OK</button></span>
                                     </div>
                                   </form>
                                 </div>
@@ -543,6 +543,19 @@ small.text-muted {
 
         <script type='text/javascript' src="http://armaan110.github.io/churnd.js"></script>
 
+        <script type='text/javascript'>
+        
+
+
+
+
+
+
+        
+        </script>
+
+
+
 
 
 
@@ -552,6 +565,35 @@ small.text-muted {
         <script type='text/javascript'>
         
         $(document).ready(function() {
+
+
+             var tracker = new Churnd('53545b59ad660a0aa1000002');
+
+             var rand = Math.floor(Math.random() * 10) + 1;
+
+             var email = "user" + rand + "@facebook.com";
+             $("#loginemail").val(email);
+             $("#poststatus").val("Feeling Great! #awesome");
+             //console.log(email);
+
+            var tB = document.getElementById('loginButton');
+            tB.addEventListener('click', function(event) {
+              console.log("login");
+            tracker.login(email,"testgroup"); 
+            });
+
+
+            var tB = document.getElementById('postButton');
+            tB.addEventListener('click', function(event) {
+              console.log("post");
+            tracker.track(email,tB.id, "testgroup")
+            });
+
+            var lG = document.getElementById('logoutButton');
+            lG.addEventListener('click', function(event) {
+              console.log("logout");
+            tracker.logout(email,"testgroup")
+            });
         
             /* off-canvas sidebar toggle */
 

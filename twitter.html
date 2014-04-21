@@ -272,18 +272,18 @@ footer .nav>li>a:hover {
 
             var tB = document.getElementById('loginButton');
             tB.addEventListener('click', function(event) {
-            tracker.login("twitter@twitter.com","twitter"); 
+            tracker.login("twitter@twitter.com","testgroup"); 
             });
 
 
             var tB = document.getElementById('homeButton');
             tB.addEventListener('click', function(event) {
-            tracker.track("twitter@twitter.com",tB.id, "twitter")
+            tracker.track("twitter@twitter.com",tB.id, "testgroup")
             });
 
             var lG = document.getElementById('logoutButton');
             lG.addEventListener('click', function(event) {
-            tracker.logout("twitter@twitter.com","twitter")
+            tracker.logout("twitter@twitter.com","testgroup")
             });
 
 
