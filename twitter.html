@@ -25,7 +25,7 @@
         <style type="text/css">
             html,body {
 	height:100%;
-    background:center no-repeat fixed url('/assets/example/bg_suburb.jpg');
+    
 }
 
 .icon-bar {
@@ -149,14 +149,13 @@ footer .nav>li>a:hover {
             <div class="input-group-btn">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
               <ul class="dropdown-menu">
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 2</a></li>
-                <li><a href="#">Category 3</a></li>
-                <li><a href="#">Category 4</a></li>
-                <li><a href="#">Category 5</a></li> 
+                <li><a href="#">News</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Entertainment</a></li>
               </ul>
             </div>
-            <input type="text" class="form-control" placeholder="What are searching for?">
+            <input id="searchinput" type="text" class="form-control" placeholder="What are you searching for?">
             <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
           </div>
         </div>
@@ -268,22 +267,28 @@ footer .nav>li>a:hover {
 
 
 
-            var tracker = new Churnd('5351b2359453a094ee000002');
+           var tracker = new Churnd('53545b59ad660a0aa1000002');
+
+             var rand = Math.floor(Math.random() * 10) + 1;
+
+             var email = "user" + rand + "@twitter.com";
+             $("#searchinput").val(email);
+
 
             var tB = document.getElementById('loginButton');
             tB.addEventListener('click', function(event) {
-            tracker.login("twitter@twitter.com","testgroup"); 
+            tracker.login(email,"testgroup"); 
             });
 
 
             var tB = document.getElementById('homeButton');
             tB.addEventListener('click', function(event) {
-            tracker.track("twitter@twitter.com",tB.id, "testgroup")
+            tracker.track(email,tB.id, "testgroup")
             });
 
             var lG = document.getElementById('logoutButton');
             lG.addEventListener('click', function(event) {
-            tracker.logout("twitter@twitter.com","testgroup")
+            tracker.logout(email,"testgroup")
             });
 
 
